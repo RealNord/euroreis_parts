@@ -1,0 +1,17 @@
+@import url(../css/null.css);
+@import url(../css/fonts.css);
+html {
+  background: linear-gradient(#990f0f, #c75f1a);
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.james {
+  background-color: #fff;
+  font-size: 200px;
+}
