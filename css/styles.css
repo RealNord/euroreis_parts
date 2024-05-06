@@ -1,17 +1,67 @@
 @import url(../css/null.css);
 @import url(../css/fonts.css);
 html {
-  background: linear-gradient(#990f0f, #c75f1a);
   font-size: 10px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 3rem;
+  text-align: center;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 1, 1, 0.308);
+  background-image: url(../img/background-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.james {
-  background-color: #fff;
-  font-size: 200px;
+.container {
+  background: rgba(251, 255, 0, 0.808);
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0px 25px;
+}
+
+header {
+  height: 30vh;
+  background: rgba(240, 144, 144, 0.308);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+section {
+  min-height: 50vh;
+  padding: 15px;
+}
+
+.section1 {
+  min-height: 70vh;
+  background: rgba(236, 117, 117, 0.308);
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 {
+  background: rgba(80, 241, 215, 0.308);
+}
+
+.section3 {
+  background: rgba(57, 228, 100, 0.308);
+}
+
+.section4 {
+  background: rgba(217, 68, 247, 0.308);
 }
