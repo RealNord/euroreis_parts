@@ -3,6 +3,7 @@
 html {
   font-size: 10px;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -12,15 +13,47 @@ h1 {
   margin-bottom: 15px;
 }
 
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
 p {
   font-size: 3rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  padding: 0px;
+}
+ul :hover {
+  text-shadow: #FC0 1px 0 10px;
+}
+ul li {
+  transition: all 0.8s;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+address {
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: rgba(255, 1, 1, 0.308);
   background-image: url(../img/background-main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,40 +61,183 @@ body {
 }
 
 .container {
-  background: rgba(251, 255, 0, 0.808);
+  background: rgba(212, 212, 212, 0.808);
   margin: 0px auto;
   max-width: 1200px;
   padding: 0px 25px;
+  box-shadow: 0px 0px 20px black;
 }
 
 header {
-  height: 30vh;
-  background: rgba(240, 144, 144, 0.308);
+  height: 10vh;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+}
+header img {
+  height: 10vh;
+  padding-top: 5px;
 }
 
 section {
   min-height: 50vh;
   padding: 15px;
+  overflow: hidden;
 }
 
 .section1 {
-  min-height: 70vh;
-  background: rgba(236, 117, 117, 0.308);
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.arrow__transit {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+}
+
+.section2 {
   display: flex;
   flex-direction: column;
 }
 
-.section2 {
-  background: rgba(80, 241, 215, 0.308);
+.section2__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  vertical-align: middle;
 }
 
 .section3 {
-  background: rgba(57, 228, 100, 0.308);
+  display: flex;
+  flex-direction: column;
+}
+.section3 h2 {
+  margin-bottom: 10px;
+}
+
+.section3__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.section3__text-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.section3__text-wrapper a {
+  font-size: 3rem;
+  user-select: none;
+  transition: all 0.6s;
+  font-weight: 600;
+}
+.section3__text-wrapper a:hover {
+  text-shadow: #FC0 1px 0 10px;
+}
+
+.block-image {
+  height: 100%;
+  max-width: 250px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.call_list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section3__messanger-list_wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section3__messanger-list {
+  display: flex;
+  gap: 7px;
+}
+
+.viber__link {
+  background-image: url(../img/icons/viber-icon.svg);
+}
+
+.whatsapp__link {
+  background-image: url(../img/icons/whatsapp-icon.svg);
+}
+
+.messanger__link {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
 }
 
 .section4 {
-  background: rgba(217, 68, 247, 0.308);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section4 address {
+  margin-top: -15px;
+}
+
+.section4__map {
+  width: 100%;
+  border: solid black;
+  height: 40vh;
+  border-radius: 25px;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+.section4__map iframe {
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+  .section2__wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+
+  .section3__wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .section2__wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
