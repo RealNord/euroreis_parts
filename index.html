@@ -1,105 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./img/evr-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/evr-logo.webp" type="image/x-icon">
+    <meta name=description content="Еврорейс-запчасть, лучший вариант для покупки запчасти для грузовиков европейских марок. Если ваша грузовая машина требует детали для ремонта в грузовом автосервисе, вы можете приобрести большинство комплектующих в нашем магазине.">
     <title>Грузовые запчасти «Еврорейс»</title>
 </head>
 <body>
     <div class="container">
-    <!--  -->
         <header>
+            <div class="header__misc"></div>
             <div class="header__logo">
-                <img src="./img/evr-logo.png" alt="">
+                <img src="./img/evr-logo.webp" alt="Логотип компании Еврорейс-Запчасть">
+            </div>
+            <div class="header__contact">
+                <a href="tel:+375291550888">+375 29 155 08 88</a>
+                <a href="tel:+375291550888">+375 1647 47 000</a>
+                <a href="#call_us" class="call__mobile"> </a>
             </div>
         </header>
-        <!-- Секция#1 с текстом, основным -->
         <section class="section1">
-            <h1>Магазин запчастей для грузовых авто «Еврорейс»</h1>
-            <p>Еврорейс - ваш надежный поставщик запасных частей для грузовых автомобилей. Мы предлагаем широкий ассортимент высококачественных компонентов для грузовых автомобилей. Наш магазин обеспечивает профессиональный подход и индивидуальное обслуживание каждого клиента.</p>
-            <a class="arrow__transit" href="#about_us"></a>
+            <h1>Магазин запчастей для грузовых авто «Еврорейс-Запчасть»</h1>
+            <p>Еврорейс - ваш надежный поставщик запасных частей для грузовых автомобилей. Мы предлагаем широкий ассортимент высококачественных компонентов для грузовиков различных моделей. Наш магазин обеспечивает профессиональный подход и индивидуальное обслуживание каждого клиента.</p>
+            <a class="arrow-transit" href="#about_us"> </a>
         </section>
-        <!-- Секция#2 текст фото, подводит к контактам -->
         <section class="section2" id="about_us">
             <h1>Что мы можем предложить?</h1>
             <div class="section2__wrapper">
                 <div class="block-image">
-                    <img src="./img/image-tier1.jpg" alt="Связаться с нами">
+                    <img src="./img/image-tier1.webp" alt="Связаться с нами">
                 </div>
-                <!--  -->
                 <div class="section2__text-wrapper">
                     <ul>
-                        <li>123 213 13123 123 1231 3123 123 123 123123 123 123 123</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>5</li>
+                        <li>Запасные части, ремонтные комплекты, узлы и агрегаты;</li>
+                        <li>Смазочные материалы, технические жидкости и автохимия;</li>
+                        <li>Шины и колесные диски;</li>
+                        <li>Шиномонтаж со скидкой в 50%, при покупке шин в нашем магазине;</li>
+                        <li>Достойный сервис и отношение к клиентам.</li>
                     </ul>
                 </div>                
             </div>
         </section>
-        <!-- Секция#3 контакты, вызов и консультация -->
-        <section class="section3">
+        <section class="section3" id="call_us">
             <h1>Связаться с нами</h1>
             <div class="section3__wrapper">
                 <div class="section3__text-wrapper">
-                    <div class="call_list">
-                        <h2>Вызов по телефону</h2>
-                        <a href="tel:+79991112233">+375 12 123 45 67</a>
-                        <a href="tel:+79991112233">+375 12 123 45 67</a>
+                    <div class="section3__call-list">
+                        <h2>Телефон для связи</h2>
+                        <a href="tel:+375291550888">+375 29 155 08 88</a>
+                        <a href="tel:+375164747000">+375 1647 47 000</a>
                     </div>
-                    <div class="section3__messanger-list_wrapper">
+                    <div class="section3__messangers-wrapper">
                         <h2>Мессенджеры</h2>
-                        <div class="section3__messanger-list">
-                            <a href="" class="viber__link messanger__link"></a>
-                            <a href="" class="whatsapp__link messanger__link"></a>
+                        <span>(Нажмите, чтобы начать переписку)</span>
+                        <div class="section3__messangers" title="Нажмите, чтобы начать переписку">
+                            <a href="viber://chat?number=%2B375296858364" target="_blank" class="viber-link messanger-link"></a>
+                            <a href="https://wa.me/375296858364" target="_blank" class="whatsapp-link messanger-link"></a>
                         </div>
                     </div>
                 </div>
-                <!--  -->
                 <div class="block-image">
-                    <img src="./img/image-contact.jpg" alt="Связаться с нами">
+                    <img src="./img/image-contact.webp" alt="Связаться с нами">
                 </div>
-                
             </div>
         </section >
-        <!-- Секция#4 с адресом и картой -->
         <section class="section4">
             <h1>Наш магазин на карте</h1>
             <address>Республика Беларусь, 225644, Брестская область, Лунинецкий район, г. Лунинец, ул Мелиоративная, д. 30</address>
             <div class="section4__map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc71ff19486837fd60433e3a0ccbb5b73bab5c36e0e2a8f5d0a4dc554bf78e11&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc71ff19486837fd60433e3a0ccbb5b73bab5c36e0e2a8f5d0a4dc554bf78e11&amp;source=constructor" title="Магазин можно найти на карте"></iframe>
             </div>
         </section>
-        <!-- Подземка (может быть пустой или с дублированием контактов) -->
         <footer>
-            COPYRIGHT 2024 - AVTO.EUROREIS.BY
+            COPYRIGHT 2024 - ZAP.EUROREIS.BY
         </footer>
-    <!--  -->
     </div>
-    <script src="./js/script.js"></script>
 </body>
 </html>
