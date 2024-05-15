@@ -6,7 +6,7 @@
 //  //  //  //  //  //  //  //  //  //  //  //  //  //
 // Переменные   //  //  //  //  //  //  //  //  //  //
 //  //  //  //  //  //  //  //  //  //  //  //  //  //
-$header-h: 10vh;
+$header-h: 20vh;
 $text-glow_color: #FC0;
 $GLOBAL_FONT_SIZE: 10px;
 $HEADER_FONT_FAMILY: 'Yanone Kaffeesatz', sans-serif;
@@ -117,27 +117,26 @@ header{
     // 
     padding-top: 20px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
     // 
     display: flex;
     justify-content: space-between;
     // 
     img{
-        height: 10vh;
-        padding-top: 5px;
+        height: 20vh;
+        width: 100%;
     }
 }
 .header__misc{
-    width: 110px; 
+    width: 20%; 
 }
 .header__logo{
     display: flex;
-    justify-content: center;
+    align-self: center;
 }
 .header__contact{
-    font-size: 1.3rem;
-    // 
-    padding-top: 35px;
+    width: 20%;
+    font-size: 2.2rem;
+    font-weight: bold;
     // 
     @include flex-template_column();
     gap: 7px;
@@ -290,6 +289,15 @@ footer{
 // Медиа-запросы    //  //  //  //  //  //  //  //  //
 //  //  //  //  //  //  //  //  //  //  //  //  //  //
 @media screen and (max-width: 720px) {
+    .header__contact{
+        a{
+            display: none;
+        }
+        .call__mobile{
+            display: inline-block;
+            align-self: self-end;
+        }
+    }
     .section2__wrapper{
         flex-wrap: wrap;
     }
@@ -298,24 +306,32 @@ footer{
     html{
         font-size: 8px;
     }
+    .container{
+        padding: 5px;
+    }
     .header__logo{
         img{
-            height: 8vh;
+            height: 10vh;
             padding-top: 5px;
         }
     }
     .header__contact{
-        width: 110px;
-        // 
+        text-align: center;
         padding-top: 0px;
+        padding-right: 5px;
         // 
-        flex-direction: row;
-        justify-content: end;
+        justify-content: flex-start;
+        // 
         a{
             display: none;
         }
         .call__mobile{
+            width: 38px;
+            min-width: 38px;
+            min-height: 38px;
+            // 
             display: inline-block;
+            align-self: self-end;
         }
     }
     .section2__wrapper{
